@@ -85,7 +85,7 @@ app.get("/mp4", async (req, res, next) => {
       });
     }
 
-    let title = "video";
+    let title = "${title}";
 
     await ytdl.getBasicInfo(
       url,
